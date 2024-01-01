@@ -1,1 +1,1 @@
-console.log("roll social network");
+import './sass/main.scss';

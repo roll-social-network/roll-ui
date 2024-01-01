@@ -1,8 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isProduction = process.env.NODE_ENV == 'production';
-const stylesHandler = 'style-loader';
+const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
     entry: './src/index.js',
@@ -17,6 +18,7 @@ const config = {
         new HtmlWebpackPlugin({
             template: 'index.html',
         }),
+        new MiniCssExtractPlugin(),
     ],
     module: {
         rules: [

@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+footer {
+  margin: 2rem 1rem;
+  font-size: .75rem;
+  font-weight: $font-thin;
+  text-align: center;
+
+  strong {
+    font-weight: $font-regular;
+  }
+}

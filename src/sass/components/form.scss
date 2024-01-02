@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+form {
+  > div {
+    margin: 1rem;
+
+    > label {
+      display: block;
+    }
+
+    > .helptext {
+      font-size: .5rem;
+      font-weight: $font-thin;
+    }
+
+    > label,
+    > .helptext {
+      margin: .125rem 0;
+    }
+
+    > input {
+      display: block;
+      font-size: 1.5rem;
+      margin: .5rem 0;
+    }
+  }
+
+  button {
+    font-size: .75rem;
+    background-color: $primary-color;
+    color: $primary-inverted-color;
+    font-family: $font-family;
+    font-weight: $font-regular;
+    border-radius: .25rem;
+    border-style: solid;
+    border-width: 0;
+    padding: .5rem .75rem;
+    margin: 0;
+    cursor: pointer;
+  }
+}

@@ -2,10 +2,14 @@
   font-weight: $font-thin;
 }
 
+.full-height {
+  height: 100vh;
+}
+
 .centered {
   position: relative;
 
-  .content {
+  > .content {
     position: absolute;
     top: 50%;
     left: 50%;

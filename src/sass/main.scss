@@ -10,7 +10,7 @@ body {
   padding: 0;
   background-color: $bg-color;
   color: $font-color;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-family;
   font-size: 1rem;
   font-weight: $font-regular;
 }

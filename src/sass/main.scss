@@ -33,5 +33,12 @@ a {
   font-weight: $font-bold;
 }
 
+section {
+  display: block;
+  margin: 2rem auto;
+  padding: .5rem;
+  max-width: 600px;
+}
+
 @import './components/_all.scss';
 @import './_utils.scss';

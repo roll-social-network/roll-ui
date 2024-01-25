@@ -17,14 +17,27 @@
   }
 
   > picture {
+    position: relative;
     display: block;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
 
     > img {
+      position: absolute;
+      top: 0;
+      left: 0;
       display: block;
       padding: 0;
       margin: 0;
       width: 100%;
+      height: 100%;
     }
   }
 

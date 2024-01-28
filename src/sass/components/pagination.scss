@@ -1,12 +1,9 @@
 .pagination {
+  display: flex;
   font-size: .75rem;
   margin: 1rem;
 
-  > .left {
-    float: left;
-  }
-
   > .right {
-    float: right;
+    margin-left: auto;
   }
 }

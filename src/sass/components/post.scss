@@ -1,7 +1,17 @@
 @import '../_variables.scss';
 
 .post {
-  margin: 4rem 0;
+  $margin: 4rem;
+
+  margin: $margin 0;
+
+  &:first-child {
+    margin: 0 auto $margin;
+  }
+
+  &:last-child {
+    margin: $margin auto 0;
+  }
 
   > .username {
     display: block;

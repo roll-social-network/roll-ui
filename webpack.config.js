@@ -1,8 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { EnvironmentPlugin } = require('webpack');
 
-const isProduction = process.env.NODE_ENV == 'production';
+const PRODUCTION = 'production';
+const DEVELOPMENT = 'development';
+const isProduction = process.env.NODE_ENV === PRODUCTION;
 const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
@@ -19,6 +22,7 @@ const config = {
             template: 'index.html',
         }),
         new MiniCssExtractPlugin(),
+        new EnvironmentPlugin({ NODE_ENV: DEVELOPMENT }),
     ],
     module: {
         rules: [

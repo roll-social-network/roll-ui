@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { EnvironmentPlugin } = require('webpack');
+const { EnvironmentPlugin, DefinePlugin } = require('webpack');
 
 const PRODUCTION = 'production';
 const DEVELOPMENT = 'development';
@@ -22,7 +22,14 @@ const config = {
             template: 'index.html',
         }),
         new MiniCssExtractPlugin(),
-        new EnvironmentPlugin({ NODE_ENV: DEVELOPMENT }),
+        new EnvironmentPlugin({
+          NODE_ENV: DEVELOPMENT,
+        }),
+        new DefinePlugin({
+          __VUE_OPTIONS_API__: true,
+          __VUE_PROD_DEVTOOLS__: !isProduction,
+          __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: !isProduction,
+        }),
     ],
     module: {
         rules: [

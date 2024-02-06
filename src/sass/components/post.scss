@@ -51,9 +51,18 @@
     }
   }
 
-  > .created-at {
-    text-align: right;
-    font-size: .75rem;
-    font-weight: $font-thin;
+  > .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .actions {
+      font-size: 1.5rem;
+    }
+
+    > .created-at {
+      font-size: .75rem;
+      font-weight: $font-thin;
+    }
   }
 }

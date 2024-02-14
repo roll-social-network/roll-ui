@@ -20,7 +20,10 @@ export default {
       const href = this.$el.getAttribute('href')
       const response = await axios.get(
         href,
-        { headers: { 'Action-Component': 'like-dislike' } }
+        {
+          withCredentials: true,
+          headers: { 'Action-Component': 'like-dislike' }
+        }
       )
       this.hasLike = response.status === 201
     }

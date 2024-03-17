@@ -61,11 +61,11 @@ const ToastQueue = {
 
 export default {
   install: (app, options) => {
-    app.component("toast-queue", ToastQueue)
+    app.component('toast-queue', ToastQueue)
 
     const toast = new Toast()
 
-    app.config.globalProperties.$toast = toast;
+    app.config.globalProperties.$toast = toast
     app.provide('$toast', toast)
   }
 }

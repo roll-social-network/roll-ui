@@ -18,14 +18,19 @@ export default {
   methods: {
     async likeDislike () {
       const href = this.$el.getAttribute('href')
-      const response = await axios.get(
-        href,
-        {
-          withCredentials: true,
-          headers: { 'Action-Component': 'like-dislike' }
-        }
-      )
-      this.hasLike = response.status === 201
+      try {
+        const response = await axios.get(
+          href,
+          {
+            withCredentials: true,
+            headers: { 'Action-Component': 'like-dislike' }
+          }
+        )
+        this.hasLike = response.status === 201
+      } catch (axiosError) {
+        const { response } = axiosError
+        this.$toast.error(response.data)
+      }
     }
   },
   template: '<a @click.prevent.stop="likeDislike()"><i :class="iconClass"></i></a>'

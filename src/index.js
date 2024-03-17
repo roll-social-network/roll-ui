@@ -12,5 +12,10 @@ const timelineApp = createApp({
   }
 })
 
+const toastApp = createApp()
+
 timelineApp.use(Toast)
 timelineApp.mount('#timeline')
+
+toastApp.use(Toast)
+toastApp.mount('#toast')

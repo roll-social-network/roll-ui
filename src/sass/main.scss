@@ -40,5 +40,11 @@ section {
   max-width: 600px;
 }
 
+#toast {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 @import './components/_all.scss';
 @import './_utils.scss';

@@ -39,6 +39,8 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: .5rem;
+    overflow: hidden;
 
     &:after {
       content: "";

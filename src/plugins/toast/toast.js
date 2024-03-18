@@ -1,8 +1,6 @@
 import eventBus from './eventBus'
 
 export default class Toast {
-  constructor ({}) {}
-
   open (level, { message, action_message: actionMessage, action_url: actionURL, action_component: actionComponent }) {
     eventBus.emit('toast', {
       level,

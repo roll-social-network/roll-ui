@@ -1,11 +1,11 @@
 import eventBus from './eventBus'
 import DefaultActionButton from './actionsButtons/defaultActionButton'
-import PopupLogin from './actionsButtons/popupLogin'
+import PopupOpenerCallback from './actionsButtons/popupOpenerCallback'
 
 export default {
   components: {
     DefaultActionButton,
-    PopupLogin
+    PopupOpenerCallback
   },
   template:
   `

@@ -13,10 +13,10 @@ export default {
   methods: {
     openPopup () {
       const popupId = (Math.random() + 1).toString(36).substring(2)
-      const callbackMessage = `event-${popupId}`
+      const callbackMessage = `popup-opener-callback-action-button-${popupId}`
       const actionUrl = new URL(this.action.url)
-      actionUrl.searchParams.append('callback', callbackMessage)
-      actionUrl.searchParams.append('origin', window.origin)
+      actionUrl.searchParams.append('ocm', callbackMessage)
+      actionUrl.searchParams.append('oco', window.origin)
       const popup = window.open(
         actionUrl,
         popupId,

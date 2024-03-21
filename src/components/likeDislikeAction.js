@@ -3,11 +3,13 @@ import axios from 'axios'
 export default {
   props: {
     postPk: Number,
-    initialHasLike: Boolean
+    initialHasLike: Boolean,
+    initialLikesCount: Number
   },
   data () {
     return {
-      hasLike: this.initialHasLike
+      hasLike: this.initialHasLike,
+      likesCount: this.initialLikesCount
     }
   },
   computed: {
@@ -33,5 +35,10 @@ export default {
       }
     }
   },
-  template: '<a @click.prevent.stop="likeDislike()"><i :class="iconClass"></i></a>'
+  template: `
+    <a @click.prevent.stop="likeDislike()">
+      <i :class="iconClass"></i>
+      <span>{{ likesCount }}</span>
+    </a>
+  `
 }

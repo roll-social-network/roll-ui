@@ -8,8 +8,7 @@ export default {
   },
   data () {
     return {
-      hasLike: this.initialHasLike,
-      likesCount: this.initialLikesCount
+      hasLike: this.initialHasLike
     }
   },
   computed: {
@@ -38,7 +37,12 @@ export default {
   template: `
     <a @click.prevent.stop="likeDislike()">
       <i :class="iconClass"></i>
-      <span>{{ likesCount }}</span>
+      <watched-attr
+        component="span"
+        model="posts"
+        attr="likes_count"
+        :pk="postPk"
+        :initial="initialLikesCount" />
     </a>
   `
 }

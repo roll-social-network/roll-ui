@@ -5,9 +5,9 @@ import LoadingIcon from './components/loadingIcon'
 import Toast from './plugins/toast'
 import Watcher from './plugins/watcher'
 import './sass/main.scss'
-import './fontawesome-free-6.5.1-web/scss/fontawesome.scss'
-import './fontawesome-free-6.5.1-web/scss/regular.scss'
-import './fontawesome-free-6.5.1-web/scss/solid.scss'
+import './fontawesome/scss/fontawesome.scss'
+import './fontawesome/scss/regular.scss'
+import './fontawesome/scss/solid.scss'
 
 const timelineApp = createApp()
 timelineApp.component('LikeDislikeAction', LikeDislikeAction)

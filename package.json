@@ -1,6 +1,6 @@
 {
   "name": "roll-social-network-frontend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "roll social network frontend",
   "main": "src/index.js",
   "scripts": {

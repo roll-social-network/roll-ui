@@ -1,0 +1,35 @@
+.rolls-cards {
+  display: grid;
+  margin: 1rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: .5rem;
+
+  @media screen and (max-width: $section-max-width) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  > .card {
+    display: inline-block;
+    color: $font-color;
+    flex: 1;
+    padding: 1rem 1.5rem;
+    background-color: rgba(72, 84, 96, .5);
+    border-radius: .25rem;
+    box-shadow: 0 0 .5rem rgba(15, 188, 249, .175);
+    border: solid 1px #485460;
+
+    &:hover {
+      border-color: #0fbcf9;
+    }
+
+    .title {
+      font-size: 1.25rem;
+    }
+
+    .domain {
+      font-size: .75rem;
+      color: $discreet-font-color;
+    }
+  }
+}

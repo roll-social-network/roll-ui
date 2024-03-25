@@ -27,8 +27,17 @@
       font-size: 1.25rem;
     }
 
-    .domain {
+    .stats {
       font-size: .75rem;
+
+      > span {
+        display: inline-block;
+      }
+    }
+
+    .domain {
+      margin: .5rem 0;
+      font-size: .5rem;
       color: $discreet-font-color;
     }
   }

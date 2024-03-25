@@ -29,6 +29,12 @@ header {
       }
     }
   }
+
+  &.banner {
+    text-align: left;
+    padding: 5rem 0;
+    background: linear-gradient(0deg, rgba(30, 39, 46, 1) 0%, rgba(72, 84, 96, .5) 100%);
+  }
 }
 
 .header-saver {

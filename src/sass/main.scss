@@ -25,6 +25,23 @@ h3 {
   padding: 0;
   margin: .25rem 0;
   font-weight: $font-bold;
+
+  &.discreet {
+    color: $discreet-font-color;
+    text-transform: uppercase;
+  }
+}
+
+h1.discreet {
+  font-size: 1rem;
+}
+
+h2.discreet {
+  font-size: .75rem;
+}
+
+h3.discreet {
+  font-size: .5rem;
 }
 
 a {

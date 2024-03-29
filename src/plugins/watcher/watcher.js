@@ -13,7 +13,8 @@ export default class Watcher {
       return this._wsPromise
     }
     this._wsPromise = new Promise((resolve, reject) => {
-      const ws = new WebSocket(`ws://${window.location.host}/ws/watcher/`)
+      const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
+      const ws = new WebSocket(`${wsProtocol}//${window.location.host}/ws/watcher/`)
       ws.onopen = () => {
         this._wsPromise = null
         this._ws = ws

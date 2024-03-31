@@ -4,6 +4,7 @@ import InfinitePagination from './components/infinitePagination'
 import LoadingIcon from './components/loadingIcon'
 import Toast from './plugins/toast'
 import Watcher from './plugins/watcher'
+import qrCodeRender from './utils/qrCodeRender'
 import './sass/main.scss'
 import './fontawesome/scss/fontawesome.scss'
 import './fontawesome/scss/regular.scss'
@@ -20,3 +21,5 @@ timelineApp.mount('#timeline')
 const toastApp = createApp()
 toastApp.use(Toast)
 toastApp.mount('#toast')
+
+qrCodeRender()

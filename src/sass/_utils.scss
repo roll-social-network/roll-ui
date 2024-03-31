@@ -14,6 +14,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 100%;
   }
 }
 
@@ -23,4 +24,8 @@
 
 .text-right {
   text-align: right;
+}
+
+.small {
+  font-size: .75rem;
 }

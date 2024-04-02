@@ -5,6 +5,7 @@ import LoadingIcon from './components/loadingIcon'
 import Toast from './plugins/toast'
 import Watcher from './plugins/watcher'
 import qrCodeRender from './utils/qrCodeRender'
+import copy2clipboard from './utils/copy2clipboard'
 import './sass/main.scss'
 import './fontawesome/scss/fontawesome.scss'
 import './fontawesome/scss/regular.scss'
@@ -23,3 +24,4 @@ toastApp.use(Toast)
 toastApp.mount('#toast')
 
 qrCodeRender()
+copy2clipboard()

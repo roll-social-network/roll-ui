@@ -22,20 +22,22 @@ form {
       display: block;
       font-size: 1.5rem;
       margin: .5rem 0;
+      max-width: 100%;
     }
   }
+}
 
-  button {
-    font-size: .75rem;
-    background-color: $primary-color;
-    color: $primary-inverted-color;
-    font-family: $font-family;
-    font-weight: $font-regular;
-    border-radius: .25rem;
-    border-style: solid;
-    border-width: 0;
-    padding: .5rem .75rem;
-    margin: 0;
-    cursor: pointer;
-  }
+button,
+.button {
+  font-size: .75rem;
+  background-color: $primary-color;
+  color: $primary-inverted-color;
+  font-family: $font-family;
+  font-weight: $font-regular;
+  border-radius: .25rem;
+  border-style: solid;
+  border-width: 0;
+  padding: .5rem .75rem;
+  margin: 0;
+  cursor: pointer;
 }

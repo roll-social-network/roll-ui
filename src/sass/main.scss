@@ -58,7 +58,7 @@ section,
   max-width: $section-max-width;
 
   &.half {
-    max-width: $section-max-width / 2;
+    max-width: calc($section-max-width / 2);
   }
 }
 

@@ -4,25 +4,56 @@ form {
   > div {
     margin: 1rem 0;
 
-    > label {
+    > fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      gap: .25rem;
+
+      > legend,
+      > .helptext {
+        flex-basis: 100%;
+      }
+
+      > input,
+      > select {
+        flex-grow: 5;
+        flex-shrink: 5;
+        flex-basis: 0;
+      }
+
+      > select[data-prefix-phone-number] {
+        flex-grow: 2;
+      }
+    }
+
+    label,
+    legend {
       display: block;
     }
 
-    > .helptext {
+    legend {
+      padding: 0;
+    }
+
+    .helptext {
       font-size: .5rem;
       font-weight: $font-thin;
     }
 
-    > label,
-    > .helptext {
+    label,
+    .helptext {
       margin: .125rem 0;
     }
 
-    > input {
+    input,
+    select {
       display: block;
-      font-size: 1.5rem;
       margin: .5rem 0;
-      max-width: 100%;
+      width: 100%;
+      font-size: 1.5rem;
     }
   }
 }

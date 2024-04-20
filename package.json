@@ -1,6 +1,6 @@
 {
   "name": "roll-social-network-ui",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "roll social network ui",
   "main": "src/index.js",
   "scripts": {

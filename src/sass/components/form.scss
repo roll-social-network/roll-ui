@@ -19,13 +19,13 @@ form {
 
       > input,
       > select {
-        flex-grow: 3;
-        flex-shrink: 3;
+        flex-grow: 5;
+        flex-shrink: 5;
         flex-basis: 0;
       }
 
       > select[data-prefix-phone-number] {
-        flex-grow: 1;
+        flex-grow: 2;
       }
     }
 

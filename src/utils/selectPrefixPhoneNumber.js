@@ -6,9 +6,9 @@ const mask = (selectEl) => {
 }
 
 const clear = (selectEl) => {
-  selectEl.querySelectorAll(`option[data-original-text]`).forEach((optionEl) => {
+  selectEl.querySelectorAll('option[data-original-text]').forEach((optionEl) => {
     optionEl.text = optionEl.dataset.originalText
-    delete optionEl.dataset['originalText']
+    delete optionEl.dataset.originalText
   })
 }
 

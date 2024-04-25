@@ -12,6 +12,11 @@
     transition: left .5s;
   }
 
+  &.right {
+    right: -100%;
+    transition: right .5s;
+  }
+
   .header {
     display: flex;
     align-items: center;
@@ -78,5 +83,13 @@
 
   &:checked ~ .sidebar.left {
     left: 0;
+  }
+}
+
+#sidebar-right {
+  display: none;
+
+  &:checked ~ .sidebar.right {
+    right: 0;
   }
 }

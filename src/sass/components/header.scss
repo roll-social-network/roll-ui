@@ -10,30 +10,37 @@ header {
     left: 0;
     z-index: 80;
     width: 100%;
-    padding: .25rem;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
     text-align: left;
     align-items: center;
     justify-content: space-between;
     box-shadow: inset 0px 2rem 2rem -2rem rgba(0, 0, 0, 1);
-
-    > * {
-      margin: 0 .25rem;
-    }
+    gap: .5rem;
 
     > div {
-      display: flex;
       align-items: center;
-      gap: 1rem;
+      flex-grow: 0;
+
+      &.grow {
+        flex-grow: 1;
+        min-width: 0;
+      }
 
       label.open-sidebar {
-        padding: .5rem 1rem;
-        margin: -.5rem;
+        display: flex;
+        gap: .5rem;
+        padding: 1.25rem .5rem;
         cursor: pointer;
       }
 
       h1 {
         font-size: 1.25rem;
         font-weight: $font-bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         a {
           color: $font-color;

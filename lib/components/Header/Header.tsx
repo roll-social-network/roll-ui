@@ -1,9 +1,13 @@
 import React from 'react'
 
-export default () => {
+interface HeaderProps {
+  title?: String
+}
+
+export default ({ title = 'roll' }: HeaderProps) => {
   return (
     <header>
-      <div>roll</div>
+      <h1>{title}</h1>
     </header>
   )
 }
